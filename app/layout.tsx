@@ -1,13 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Inter } from "next/font/google"
 import "./globals.css"
 
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Booki",
+  description: "Landing Booki"
 }
 
 export default function RootLayout({
@@ -17,9 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/Logo.ico" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
-       
+
       </body>
     </html>
   )
